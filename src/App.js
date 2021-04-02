@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import AddUser from "./AddUser";
 import UserList from "./UserList";
-import ShowHideGamesLiked from "./ShowHideGamesLiked";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -31,7 +30,6 @@ class App extends Component {
         </header>
         <AddUser users={this.state.users} handleAddUser={this.handleAddUser}/>
         <UserList users={this.state.users} />
-        <ShowHideGamesLiked />
       </div>
     );
   }
